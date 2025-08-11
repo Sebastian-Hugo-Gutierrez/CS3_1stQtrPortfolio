@@ -2,11 +2,20 @@
 <h1> I ATE MY EXTRA PAIR OF PANTS BY "ACCIDENT"!!!!!!!!!!!!!!!!!!!!!!!! </h1>
 <h2> this is the output of an h2 </h2>
 <p> give me three reasons to why you're cool: </p>
+<button onclick="reasonsWhy()"> Another Reason </button>
 
 <input> id="in1">
 <input> id="in2">
 <input> id="in3">
 
-<script>
+<div> id="out1"> </div>
 
+</div>
+
+<script>
+function reasonsWhy() {
+    
+    out1.innerHTML += "<p>" + in1.value + "</p";
+    out1.innerHTML += "<p>" + in2.value + "</p";
+}
 </script>
