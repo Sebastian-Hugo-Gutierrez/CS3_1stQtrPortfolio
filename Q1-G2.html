@@ -3,21 +3,26 @@
 <h2> Second Graded Exercise - First Quarter </h2>
 <p> give me three reasons as to why you're cool: </p>
 
-<input> id="in1">
-<input> id="in2">
-<input> id="in3">
+<input id="in1">
+<input id="in2">
+<input id="in3">
 
 <p> you gonna add more? </p>
 <button onclick="reasonsWhy()"> Another Reason </button>
 
-<div> id="out1"> </div>
+<div id="out1"> </div>
 
 </div>
 
 <script>
 function reasonsWhy() {
-    
+    var in1 = document.getElementByid("in1");
+    var in2 = document.getElementByid("in2");
+    var in3 = document.getElementByid("in3");
+    var out1 = document.getElementById("out1");
+
     out1.innerHTML += "<p>" + in1.value + "</p";
     out1.innerHTML += "<p>" + in2.value + "</p";
+    out1.innerHTML += "<p>" + in3.value + "</p";    
 }
 </script>
