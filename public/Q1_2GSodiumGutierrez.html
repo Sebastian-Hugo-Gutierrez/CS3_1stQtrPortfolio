@@ -9,7 +9,7 @@
     </br>
         <input id = "sc" type = "text" placeholder = "Service Charge"> 
     </br>
-        <button onclick = totalMeal()> Accept Input </button>
+        <button id = "button" onclick = totalMeal()> Accept Input </button>
     </div>
 
     <script> 
@@ -21,6 +21,7 @@
         var sc = document.getElementbyid("sc");
         
         var totalCost = mp + tip + (sc / 100 * mp);
+        
         alert("Total Meal: ", totalCost.toFixed(2));
 
     }
