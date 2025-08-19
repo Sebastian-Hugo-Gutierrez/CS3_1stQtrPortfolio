@@ -5,16 +5,18 @@
     <div> Meal Price: <input>
         Tip: <input>
         Service Charge: <input> 
-        <button> Accept Input </button>
+        <button> type = "button" onclick = "document.write(totalCost)"" Accept Input </button>
     </div>
 
     <script> 
     function totalMeal() {
-        var mp;
-        var tip;
-        var sc;
+        var mp = 119.00;
+        var tip = 20;
+        var sc = 12;
         
-        var totalCost
+        var totalCost = mp + tip + (sc / 100 * mp);
+        document.write(totalCost);
+
     }
 
     </script>
