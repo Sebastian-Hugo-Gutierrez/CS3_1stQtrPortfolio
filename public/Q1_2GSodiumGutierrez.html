@@ -2,17 +2,21 @@
 <html> 
 <body> 
     <h2>Q1 2nd Graded Exercise Submitted by Gutierrez of Sodium</h2>
-    <div> Meal Price: <input>
-        Tip: <input>
-        Service Charge: <input> 
-        <button> type = "button" onclick = "document.write(totalCost)"" Accept Input </button>
+    <div>
+        <input id = "mp" type = "text" placeholder = "Meal Price">
+    </br>
+        <input id = "tip" type = "text" placeholder = "Tip">
+    </br>
+        <input id = "sc" type = "text" placeholder = "Service Charge"> 
+    </br>
+        <button onclick = "document.write(totalCost)"> Accept Input </button>
     </div>
 
     <script> 
     function totalMeal() {
-        var mp = 119.00;
-        var tip = 20;
-        var sc = 12;
+        var mp = document.getElementbyid("mp");
+        var tip = document.getElementbyid("tip");
+        var sc = document.getElementbyid("sc");
         
         var totalCost = mp + tip + (sc / 100 * mp);
         document.write(totalCost);
