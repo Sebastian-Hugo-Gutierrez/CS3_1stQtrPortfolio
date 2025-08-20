@@ -13,10 +13,10 @@
     <script> 
     document.Elementbyid("payButton").addEventListener("click", totalMeal);
     function totalMeal() {
-        var mp = document.getElementbyid("mp").innerHTML = 119.00;
-        var tip = document.getElementbyid("tip").innerHTML = 20;
-        var sc = document.getElementbyid("sc").innerHTML = 12;
-        var totalCost = mp + tip + (sc / 100 * mp);
+        var mp = document.getElementbyId("mp").innerHTML = 119.00;
+        var tip = document.getElementbyId("tip").innerHTML = 20;
+        var sc = document.getElementbyId("sc").innerHTML = 12;
+        var totalCost = parseFloat(mp) + parseInt(tip) + (sc / 100 * mp);
 
         alert("Total Meal: ", totalCost.toFixed(2));
 
