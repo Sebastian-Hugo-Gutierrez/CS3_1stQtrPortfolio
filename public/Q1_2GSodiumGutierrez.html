@@ -3,9 +3,9 @@
 <body> 
     <h2>Q1 2nd Graded Exercise Submitted by Gutierrez of Sodium</h2>
     <div>
-        Meal Price: <input id = "mp" type = "text" placeholder = "Meal Price"></br>
-        Tip: <input id = "tip" type = "text" placeholder = "Tip"></br>
-        Service Charge: <input id = "sc" type = "text" placeholder = "Service Charge"></br> 
+        Meal Price: <input id = "mp" type = "text"></br>
+        Tip: <input id = "tip" type = "text"></br>
+        Service Charge: <input id = "sc" type = "text"></br> 
         <button id = "payButton" onclick = totalMeal()> Accept Input </button>
         
     </div>
@@ -13,10 +13,9 @@
     <script> 
     document.Elementbyid("payButton").addEventListener("click", totalMeal);
     function totalMeal() {
-        var mp = document.getElementbyid("mp");
-        var tip = document.getElementbyid("tip");
-        var sc = document.getElementbyid("sc");
-        
+        var mp = document.getElementbyid("mp").innerHTML = 119.00;
+        var tip = document.getElementbyid("tip").innerHTML = 20;
+        var sc = document.getElementbyid("sc").innerHTML = 12;
         var totalCost = mp + tip + (sc / 100 * mp);
 
         alert("Total Meal: ", totalCost.toFixed(2));
