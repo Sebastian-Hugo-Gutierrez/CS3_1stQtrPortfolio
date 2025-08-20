@@ -6,7 +6,8 @@
         Meal Price: <input id = "mp" type = "text" placeholder = "Meal Price"></br>
         Tip: <input id = "tip" type = "text" placeholder = "Tip"></br>
         Service Charge: <input id = "sc" type = "text" placeholder = "Service Charge"></br> 
-        <button onclick = totalMeal()> Accept Input </button>
+        <button id = "payButton" onclick = totalMeal()> Accept Input </button>
+        
     </div>
 
     <script> 
@@ -20,7 +21,7 @@
         alert("Total Meal: ", totalCost.toFixed(2));
 
     }
-
+    document.Elementbyid("payButton").addEventListener("click", totalMeal);
     </script>
 
 </body>
