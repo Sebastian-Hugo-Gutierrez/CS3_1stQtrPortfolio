@@ -13,10 +13,10 @@
     <script type = "text/Javascript"> 
     
     function totalMeal() {
-        var mp = document.getElementbyId("mp").innerHTML = 119.00;
-        var tip = document.getElementbyId("tip").innerHTML = 20;
-        var sc = document.getElementbyId("sc").innerHTML = 12;
-        var totalCost = parseFloat(mp) + parseInt(tip) + (parseInt(sc) / 100 * parseFloat(mp));
+        var mp = 119.00;
+        var tip = 20;
+        var sc = 12;
+        var totalCost = mp + tip + (sc / 100 * mp);
 
         alert("Total Meal: ", totalCost.toFixed(2));
 
