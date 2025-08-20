@@ -11,6 +11,7 @@
     </div>
 
     <script> 
+    document.Elementbyid("payButton").addEventListener("click", totalMeal);
     function totalMeal() {
         var mp = document.getElementbyid("mp");
         var tip = document.getElementbyid("tip");
@@ -21,7 +22,7 @@
         alert("Total Meal: ", totalCost.toFixed(2));
 
     }
-    document.Elementbyid("payButton").addEventListener("click", totalMeal);
+    
     </script>
 
 </body>
