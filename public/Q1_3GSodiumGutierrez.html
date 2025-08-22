@@ -9,7 +9,7 @@
               Enter your guess: <input id = "thingNumber"> <br/>
         <button id = "checkButton" onclick = checkIt()> You Sure? Hit Me. </button>
         </div>
-        
+
         <script> 
 
         var dNumber = Math.floor(Math.random() *100) + 1;
@@ -17,11 +17,11 @@
 
         function checkIt() {
         if (addSomething < dNumber) {
-        console.log("Higher!"); } 
+        document.write("Higher!"); } 
         else {
-        console.log("Lower!"); }
+        document.write("Lower!"); }
         if (addSomething == dNumber) {
-        console.log("You are... Correct!"); }
+        document.write("You are... Correct!"); }
         }
         
         </script>
