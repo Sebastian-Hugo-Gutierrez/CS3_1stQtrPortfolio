@@ -2,28 +2,28 @@
 <html>
 <body> 
 
-    <h2> Q1 3rd Graded Exercise Submitted by Gutierrez of Sodium </h2>
+    <h2> Q1 3rd Graded Exercise Submitted by Gutierrez of 9Sodium </h2>
     
-        <div> Guess the number: **** 
-            <br/>
-            The number is between 1-100.
-            <br/>
-            Enter your guess: 
-            <input>
-            <br/>
-            <button>You Sure? Hit Me.</button>
+        <div> Guess the number: **** <br/>
+              The number is between 1-100. <br/>
+              Enter your guess: <input id = "thingNumber"> <br/>
+        <button id = "checkButton" onclick = checkIt()> You Sure? Hit Me. </button>
         </div>
+
         <script> 
+        var addSomething = document.getElementById("thingNumber");
+        var dNumber = Math.floor(Math.random() * 100) + 1;
 
-        var dNumber = Math.floor(Math.random() *100) + 1;
         function checkIt() {
+        if (addSomething < dNumber) {
+        document.write("Higher!"); } 
+        
+        else {
+        document.write("Lower!"); }
 
-
-
-
-
+        if (addSomething == dNumber) {
+        document.write("You are... Correct!"); }
         }
-
         </script>
 
 </body>
