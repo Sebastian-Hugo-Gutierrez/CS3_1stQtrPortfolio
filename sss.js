@@ -11,7 +11,8 @@
 process.stdin.on('data', input => {
     let greeting = input.toString().trim();
     console.log('YOU INPUTTED: ${greeting}');
-    switch(source){
+    switch(greeting){
+        
         case 'HELLO':
         console.log("ENGLISH")
             break;
